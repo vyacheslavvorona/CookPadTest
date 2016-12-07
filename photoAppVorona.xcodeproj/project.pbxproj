@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05F1C6C096E83EF156F49C26 /* libPods-photoAppVorona.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 918303D2881AF941EEE76728 /* libPods-photoAppVorona.a */; };
+		0C623B891DF87E2D002F923E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C623B881DF87E2D002F923E /* main.m */; };
+		0C623B8C1DF87E2D002F923E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C623B8B1DF87E2D002F923E /* AppDelegate.m */; };
+		0C623B941DF87E2D002F923E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C623B931DF87E2D002F923E /* Assets.xcassets */; };
+		0C623B971DF87E2D002F923E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C623B951DF87E2D002F923E /* LaunchScreen.storyboard */; };
+		0C623BA51DF880E6002F923E /* AppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C623BA41DF880E6002F923E /* AppDependencies.m */; };
+		0C623BB11DF889FE002F923E /* CALayer+XibConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C623BB01DF889FE002F923E /* CALayer+XibConfiguration.m */; };
+		0C623BB71DF88A29002F923E /* UIColor+MIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C623BB61DF88A29002F923E /* UIColor+MIAdditions.m */; };
+		0C623BC31DF89219002F923E /* PAVRootNavigationBarWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C623BC11DF89219002F923E /* PAVRootNavigationBarWireframe.m */; };
+		0C623BC41DF89219002F923E /* PAVRootNavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C623BC21DF89219002F923E /* PAVRootNavigationController.storyboard */; };
+		0C623BCC1DF89B64002F923E /* PAVCollectionWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C623BCB1DF89B64002F923E /* PAVCollectionWireframe.m */; };
+		0C623BD01DF89C00002F923E /* PAVCollectionPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C623BCF1DF89C00002F923E /* PAVCollectionPresenter.m */; };
+		0C623BD51DF8A536002F923E /* PAVCollectionInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C623BD41DF8A536002F923E /* PAVCollectionInteractor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		038A21614C76D9D9EA6469F4 /* Pods-photoAppVorona.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoAppVorona.debug.xcconfig"; path = "Pods/Target Support Files/Pods-photoAppVorona/Pods-photoAppVorona.debug.xcconfig"; sourceTree = "<group>"; };
+		0C623B841DF87E2D002F923E /* photoAppVorona.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = photoAppVorona.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C623B881DF87E2D002F923E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0C623B8A1DF87E2D002F923E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
+		0C623B8B1DF87E2D002F923E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
+		0C623B931DF87E2D002F923E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		0C623B961DF87E2D002F923E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0C623B981DF87E2D002F923E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C623BA31DF880E6002F923E /* AppDependencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDependencies.h; sourceTree = "<group>"; };
+		0C623BA41DF880E6002F923E /* AppDependencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDependencies.m; sourceTree = "<group>"; };
+		0C623BAF1DF889FE002F923E /* CALayer+XibConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+XibConfiguration.h"; sourceTree = "<group>"; };
+		0C623BB01DF889FE002F923E /* CALayer+XibConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+XibConfiguration.m"; sourceTree = "<group>"; };
+		0C623BB51DF88A29002F923E /* UIColor+MIAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+MIAdditions.h"; path = "UIColor+MIAdditions/UIColor+MIAdditions.h"; sourceTree = "<group>"; };
+		0C623BB61DF88A29002F923E /* UIColor+MIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+MIAdditions.m"; path = "UIColor+MIAdditions/UIColor+MIAdditions.m"; sourceTree = "<group>"; };
+		0C623BC01DF89219002F923E /* PAVRootNavigationBarWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAVRootNavigationBarWireframe.h; sourceTree = "<group>"; };
+		0C623BC11DF89219002F923E /* PAVRootNavigationBarWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAVRootNavigationBarWireframe.m; sourceTree = "<group>"; };
+		0C623BC21DF89219002F923E /* PAVRootNavigationController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PAVRootNavigationController.storyboard; sourceTree = "<group>"; };
+		0C623BCA1DF89B64002F923E /* PAVCollectionWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAVCollectionWireframe.h; sourceTree = "<group>"; };
+		0C623BCB1DF89B64002F923E /* PAVCollectionWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAVCollectionWireframe.m; sourceTree = "<group>"; };
+		0C623BCE1DF89C00002F923E /* PAVCollectionPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAVCollectionPresenter.h; sourceTree = "<group>"; };
+		0C623BCF1DF89C00002F923E /* PAVCollectionPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAVCollectionPresenter.m; sourceTree = "<group>"; };
+		0C623BD31DF8A536002F923E /* PAVCollectionInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAVCollectionInteractor.h; sourceTree = "<group>"; };
+		0C623BD41DF8A536002F923E /* PAVCollectionInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAVCollectionInteractor.m; sourceTree = "<group>"; };
+		0C623BD61DF8A71E002F923E /* PAVCollectionInteractorIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PAVCollectionInteractorIO.h; sourceTree = "<group>"; };
+		918303D2881AF941EEE76728 /* libPods-photoAppVorona.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-photoAppVorona.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF0386DAE838F19F47C3F11D /* Pods-photoAppVorona.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoAppVorona.release.xcconfig"; path = "Pods/Target Support Files/Pods-photoAppVorona/Pods-photoAppVorona.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C623B811DF87E2D002F923E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05F1C6C096E83EF156F49C26 /* libPods-photoAppVorona.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C623B7B1DF87E2D002F923E = {
+			isa = PBXGroup;
+			children = (
+				0C623B861DF87E2D002F923E /* photoAppVorona */,
+				0C623B851DF87E2D002F923E /* Products */,
+				7CC061C6699F220AE797F1F7 /* Pods */,
+				9AA740EDC7D33EA6595B2FBE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0C623B851DF87E2D002F923E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C623B841DF87E2D002F923E /* photoAppVorona.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C623B861DF87E2D002F923E /* photoAppVorona */ = {
+			isa = PBXGroup;
+			children = (
+				0C623B9F1DF88014002F923E /* Resources */,
+				0C623B9E1DF87FF4002F923E /* Classes */,
+				0C623B871DF87E2D002F923E /* Supporting Files */,
+			);
+			path = photoAppVorona;
+			sourceTree = "<group>";
+		};
+		0C623B871DF87E2D002F923E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C623B981DF87E2D002F923E /* Info.plist */,
+				0C623B881DF87E2D002F923E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0C623B9E1DF87FF4002F923E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0C623BAD1DF889D2002F923E /* Categories */,
+				0C623BA21DF8807E002F923E /* Common */,
+				0C623BA11DF8806B002F923E /* Modules */,
+				0C623B8A1DF87E2D002F923E /* AppDelegate.h */,
+				0C623B8B1DF87E2D002F923E /* AppDelegate.m */,
+				0C623BA31DF880E6002F923E /* AppDependencies.h */,
+				0C623BA41DF880E6002F923E /* AppDependencies.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0C623B9F1DF88014002F923E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0C623B951DF87E2D002F923E /* LaunchScreen.storyboard */,
+				0C623B931DF87E2D002F923E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0C623BA11DF8806B002F923E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0C623BC51DF89825002F923E /* Collection */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0C623BA21DF8807E002F923E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0C623BBC1DF89190002F923E /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0C623BAD1DF889D2002F923E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0C623BB21DF88A02002F923E /* UIColor+MIAdditions */,
+				0C623BAE1DF889E1002F923E /* CALayer */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		0C623BAE1DF889E1002F923E /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				0C623BAF1DF889FE002F923E /* CALayer+XibConfiguration.h */,
+				0C623BB01DF889FE002F923E /* CALayer+XibConfiguration.m */,
+			);
+			path = CALayer;
+			sourceTree = "<group>";
+		};
+		0C623BB21DF88A02002F923E /* UIColor+MIAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				0C623BB51DF88A29002F923E /* UIColor+MIAdditions.h */,
+				0C623BB61DF88A29002F923E /* UIColor+MIAdditions.m */,
+			);
+			name = "UIColor+MIAdditions";
+			sourceTree = "<group>";
+		};
+		0C623BBC1DF89190002F923E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0C623BBF1DF891FC002F923E /* Root Navigation Bar */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0C623BBF1DF891FC002F923E /* Root Navigation Bar */ = {
+			isa = PBXGroup;
+			children = (
+				0C623BC01DF89219002F923E /* PAVRootNavigationBarWireframe.h */,
+				0C623BC11DF89219002F923E /* PAVRootNavigationBarWireframe.m */,
+				0C623BC21DF89219002F923E /* PAVRootNavigationController.storyboard */,
+			);
+			path = "Root Navigation Bar";
+			sourceTree = "<group>";
+		};
+		0C623BC51DF89825002F923E /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				0C623BC81DF898A3002F923E /* User Interface */,
+				0C623BC71DF8987C002F923E /* Module Interface */,
+				0C623BC61DF89859002F923E /* Application Logic */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		0C623BC61DF89859002F923E /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				0C623BD21DF8A4F4002F923E /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		0C623BC71DF8987C002F923E /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		0C623BC81DF898A3002F923E /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				0C623BCD1DF89BD7002F923E /* Presenter */,
+				0C623BC91DF89B40002F923E /* Wireframe */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		0C623BC91DF89B40002F923E /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				0C623BCA1DF89B64002F923E /* PAVCollectionWireframe.h */,
+				0C623BCB1DF89B64002F923E /* PAVCollectionWireframe.m */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		0C623BCD1DF89BD7002F923E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0C623BCE1DF89C00002F923E /* PAVCollectionPresenter.h */,
+				0C623BCF1DF89C00002F923E /* PAVCollectionPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0C623BD21DF8A4F4002F923E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0C623BD31DF8A536002F923E /* PAVCollectionInteractor.h */,
+				0C623BD41DF8A536002F923E /* PAVCollectionInteractor.m */,
+				0C623BD61DF8A71E002F923E /* PAVCollectionInteractorIO.h */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		7CC061C6699F220AE797F1F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				038A21614C76D9D9EA6469F4 /* Pods-photoAppVorona.debug.xcconfig */,
+				DF0386DAE838F19F47C3F11D /* Pods-photoAppVorona.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9AA740EDC7D33EA6595B2FBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				918303D2881AF941EEE76728 /* libPods-photoAppVorona.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C623B831DF87E2D002F923E /* photoAppVorona */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C623B9B1DF87E2D002F923E /* Build configuration list for PBXNativeTarget "photoAppVorona" */;
+			buildPhases = (
+				08A4F8B50F523C20237FD08E /* [CP] Check Pods Manifest.lock */,
+				0C623B801DF87E2D002F923E /* Sources */,
+				0C623B811DF87E2D002F923E /* Frameworks */,
+				0C623B821DF87E2D002F923E /* Resources */,
+				53C6CBD38CDAB600EC643BE2 /* [CP] Embed Pods Frameworks */,
+				CBE2FA39894F25B6E5782E91 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = photoAppVorona;
+			productName = photoAppVorona;
+			productReference = 0C623B841DF87E2D002F923E /* photoAppVorona.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C623B7C1DF87E2D002F923E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Vyacheslav Vorona";
+				TargetAttributes = {
+					0C623B831DF87E2D002F923E = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0C623B7F1DF87E2D002F923E /* Build configuration list for PBXProject "photoAppVorona" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0C623B7B1DF87E2D002F923E;
+			productRefGroup = 0C623B851DF87E2D002F923E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C623B831DF87E2D002F923E /* photoAppVorona */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C623B821DF87E2D002F923E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C623B971DF87E2D002F923E /* LaunchScreen.storyboard in Resources */,
+				0C623B941DF87E2D002F923E /* Assets.xcassets in Resources */,
+				0C623BC41DF89219002F923E /* PAVRootNavigationController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08A4F8B50F523C20237FD08E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		53C6CBD38CDAB600EC643BE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-photoAppVorona/Pods-photoAppVorona-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBE2FA39894F25B6E5782E91 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-photoAppVorona/Pods-photoAppVorona-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C623B801DF87E2D002F923E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C623BC31DF89219002F923E /* PAVRootNavigationBarWireframe.m in Sources */,
+				0C623BB11DF889FE002F923E /* CALayer+XibConfiguration.m in Sources */,
+				0C623BA51DF880E6002F923E /* AppDependencies.m in Sources */,
+				0C623B8C1DF87E2D002F923E /* AppDelegate.m in Sources */,
+				0C623BD51DF8A536002F923E /* PAVCollectionInteractor.m in Sources */,
+				0C623BB71DF88A29002F923E /* UIColor+MIAdditions.m in Sources */,
+				0C623BCC1DF89B64002F923E /* PAVCollectionWireframe.m in Sources */,
+				0C623BD01DF89C00002F923E /* PAVCollectionPresenter.m in Sources */,
+				0C623B891DF87E2D002F923E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0C623B951DF87E2D002F923E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C623B961DF87E2D002F923E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0C623B991DF87E2D002F923E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0C623B9A1DF87E2D002F923E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0C623B9C1DF87E2D002F923E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 038A21614C76D9D9EA6469F4 /* Pods-photoAppVorona.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = photoAppVorona/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cookpadTest.photoAppVorona;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0C623B9D1DF87E2D002F923E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF0386DAE838F19F47C3F11D /* Pods-photoAppVorona.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = photoAppVorona/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cookpadTest.photoAppVorona;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C623B7F1DF87E2D002F923E /* Build configuration list for PBXProject "photoAppVorona" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C623B991DF87E2D002F923E /* Debug */,
+				0C623B9A1DF87E2D002F923E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C623B9B1DF87E2D002F923E /* Build configuration list for PBXNativeTarget "photoAppVorona" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C623B9C1DF87E2D002F923E /* Debug */,
+				0C623B9D1DF87E2D002F923E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C623B7C1DF87E2D002F923E /* Project object */;
+}
