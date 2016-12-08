@@ -6,14 +6,19 @@
 //  Copyright © 2016 Vyacheslav Vorona. All rights reserved.
 //
 
-#import "PAVDeviceDetector.h"
+
 #import "PAVCollectionViewController.h"
+
 #import "PAVPhotoCollectionViewCell.h"
+#import "PAVDeviceDetector.h"
+#import "PAVPhotoDisplayItem.h"
 
 static NSString *CollectionCellIdentifier = @"photoCollectionCell";
 static NSString *CollectionCellNibName = @"PAVPhotoCollectionViewCell";
 
 @interface PAVCollectionViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
+
+@property (nonatomic, strong) NSMutableArray *displayData;
 
 @end
 
@@ -22,9 +27,14 @@ static NSString *CollectionCellNibName = @"PAVPhotoCollectionViewCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.displayData = [NSMutableArray array];
     [self.eventHandler loadPhotoList];
-    
     [self configureCollectionView];
+}
+
+- (void)reloadView
+{
+    [self.collectionView reloadData];
 }
 
 - (void)configureCollectionView
@@ -40,6 +50,9 @@ static NSString *CollectionCellNibName = @"PAVPhotoCollectionViewCell";
     [flowLayout setItemSize:CGSizeMake(cellSide, cellSide)];
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
     [self.collectionView setCollectionViewLayout:flowLayout];
+    
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@" " style:UIBarButtonItemStylePlain target:nil action:nil];
+    [self.navigationItem setTitle:NSLocalizedString(@"Popular", @"init navigation bar title")];
 }
 
 - (CGFloat)getCollectionCellWidthHeight
@@ -67,13 +80,19 @@ static NSString *CollectionCellNibName = @"PAVPhotoCollectionViewCell";
     }
     else
     {
-        return 150;
+        return 180;
     }
 }
 
 - (void)showNoConnectionMessage
 {
     [self.noConnectionMessage setHidden:NO];
+}
+
+- (void)setPhotoDisplayData:(NSArray *)displayData
+{
+    self.displayData = [NSMutableArray arrayWithArray:displayData];
+    [self reloadView];
 }
 
 #pragma mark - Collection View Delegate
@@ -85,20 +104,30 @@ static NSString *CollectionCellNibName = @"PAVPhotoCollectionViewCell";
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 100; //TODO
+    return self.displayData.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     PAVPhotoCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CollectionCellIdentifier forIndexPath:indexPath];
     
+    PAVPhotoDisplayItem *displayItem = [self.displayData objectAtIndex:indexPath.row];
+    if (!displayItem.photo)
+    {
+        [self.eventHandler photoWillAppear:displayItem.photoID];
+    }
+    else
+    {
+        [cell.photoImageView setImage:displayItem.photo];
+    }
     
     return cell;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    PAVPhotoDisplayItem *selectedItem = [self.displayData objectAtIndex:indexPath.row];
+    [self.eventHandler didSelectPhotoWithID:selectedItem.photoID];
 }
 
 @end

@@ -15,12 +15,12 @@
                 <rect key="frame" x="0.0" y="0.0" width="159" height="166"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cnu-QI-Ye9">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cnu-QI-Ye9">
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </imageView>
                 </subviews>
             </view>
-            <color key="backgroundColor" red="0.90823348445595853" green="0.89135317607354647" blue="0.34453622056043764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.90823348445595853" green="0.88002125072559456" blue="0.8747389889077154" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Cnu-QI-Ye9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0W7-AX-F0G"/>
                 <constraint firstAttribute="bottom" secondItem="Cnu-QI-Ye9" secondAttribute="bottom" id="EV6-dC-ksD"/>
@@ -28,6 +28,9 @@
                 <constraint firstItem="Cnu-QI-Ye9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bEA-hj-dfO"/>
             </constraints>
             <size key="customSize" width="159" height="166"/>
+            <connections>
+                <outlet property="photoImageView" destination="Cnu-QI-Ye9" id="Vvz-Ia-C0Z"/>
+            </connections>
             <point key="canvasLocation" x="-72.5" y="49"/>
         </collectionViewCell>
     </objects>

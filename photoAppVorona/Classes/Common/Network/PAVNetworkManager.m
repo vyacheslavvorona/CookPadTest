@@ -9,6 +9,8 @@
 #import "PAVNetworkManager.h"
 
 #import "PAVConstants.h"
+#import "PAVPhotoLoadingSession.h"
+
 
 static NSString *apiKeyDictKey = @"key";
 
@@ -33,15 +35,31 @@ static NSString *apiKeyDictKey = @"key";
     }
     else
     {
-        NSDictionary *userInfo = @{@"connection":@"no connection"};
-        NSError *error = [NSError errorWithDomain:@"network" code:42 userInfo:userInfo];
-        failBlock(nil, error);
+        failBlock(nil, [self noConnectionError]);
     }
+}
+
+- (void)downloadPhotoWithID:(NSNumber *)photoID
+                      byURL:(NSString *)photoURL
+                  forOutput:(id<PAVLoadinSessionDelegate>)output
+{
+    PAVPhotoLoadingSession *session = [[PAVPhotoLoadingSession alloc] init];
+    session.loadingPhotoID = photoID;
+    session.photoURL = photoURL;
+    session.delegate = output;
+    [session startLoading];
 }
 
 - (BOOL)connected
 {
     return [AFNetworkReachabilityManager sharedManager].reachable;
+}
+
+- (NSError *)noConnectionError
+{
+    NSDictionary *userInfo = @{@"connection":@"no connection"};
+    NSError *error = [NSError errorWithDomain:@"network" code:42 userInfo:userInfo];
+    return error;
 }
 
 @end

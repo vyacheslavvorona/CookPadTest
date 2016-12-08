@@ -10,13 +10,16 @@
 #import <UIKit/UIKit.h>
 
 #import "PAVCollectionPresenter.h"
+#import "PAVDetailViewWireframe.h"
 
 @class PAVCollectionPresenter;
 
 @interface PAVCollectionWireframe : NSObject
 
 @property (nonatomic, strong) PAVCollectionPresenter *collectionPresenter;
+@property (nonatomic, strong) PAVDetailViewWireframe *detailViewWireframe;
 
 - (void)setRootViewControllerForNavigationController:(UINavigationController *)navigationController;
+- (void)showDetailViewWithPhotoID:(NSNumber *)photoID inPhotoItems:(NSArray *)photoItems;
 
 @end

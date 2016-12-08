@@ -3,6 +3,6 @@
 
 target 'photoAppVorona' do
     
-    pod 'AFNetworking', '~> 2.5'
+    pod 'AFNetworking', '~> 3.0'
 
 end

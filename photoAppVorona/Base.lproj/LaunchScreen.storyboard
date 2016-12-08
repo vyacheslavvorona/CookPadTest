@@ -26,14 +26,60 @@
                                     <constraint firstAttribute="height" constant="179" id="e7h-az-hvD"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo App for Cookpad" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzP-qe-bLd">
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.96893724552859517" blue="0.96312127209413922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UI elements by Freepik" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixp-O3-VJJ">
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Vorona Vyacheslav" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNN-Fn-6bN">
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by Pixabay API" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xua-uG-SSy">
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pixabayLogo" translatesAutoresizingMaskIntoConstraints="NO" id="oAz-2i-kUM">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="KZm-cc-OmA"/>
+                                    <constraint firstAttribute="height" constant="60" id="Pat-zL-U9E"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="freepikLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Ksn-Kt-cah">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="EfR-wG-hEu"/>
+                                    <constraint firstAttribute="height" constant="60" id="l8g-mH-7OA"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="AJ1-Gg-7gk" firstAttribute="top" secondItem="0xE-Nv-n1j" secondAttribute="bottom" constant="-20" id="4sD-YN-XAZ"/>
+                            <constraint firstItem="rzP-qe-bLd" firstAttribute="trailing" secondItem="QAY-i0-ha1" secondAttribute="trailing" id="C7E-tu-ote"/>
+                            <constraint firstItem="ixp-O3-VJJ" firstAttribute="top" secondItem="Ksn-Kt-cah" secondAttribute="top" constant="5" id="E2o-Bg-7Bq"/>
+                            <constraint firstItem="QAY-i0-ha1" firstAttribute="top" secondItem="rzP-qe-bLd" secondAttribute="top" constant="-20" id="EES-NQ-NmF"/>
+                            <constraint firstItem="CNN-Fn-6bN" firstAttribute="leading" secondItem="QAY-i0-ha1" secondAttribute="leading" id="GtT-r2-lXO"/>
                             <constraint firstItem="Zpl-ib-yr6" firstAttribute="top" secondItem="AJ1-Gg-7gk" secondAttribute="bottom" id="IBM-tH-iHi"/>
+                            <constraint firstItem="oAz-2i-kUM" firstAttribute="leading" secondItem="Xua-uG-SSy" secondAttribute="trailing" constant="15" id="M3z-do-0Y4"/>
+                            <constraint firstItem="rzP-qe-bLd" firstAttribute="leading" secondItem="QAY-i0-ha1" secondAttribute="leading" id="Moj-lR-1q3"/>
+                            <constraint firstItem="oAz-2i-kUM" firstAttribute="bottom" secondItem="QAY-i0-ha1" secondAttribute="bottom" constant="-5" id="Q66-Ch-N3m"/>
+                            <constraint firstItem="Ksn-Kt-cah" firstAttribute="bottom" secondItem="QAY-i0-ha1" secondAttribute="bottom" constant="-5" id="WLR-J8-kIF"/>
                             <constraint firstItem="AJ1-Gg-7gk" firstAttribute="leading" secondItem="9tj-f4-5Oe" secondAttribute="leadingMargin" constant="-16" id="aTn-je-xZa"/>
+                            <constraint firstItem="Xua-uG-SSy" firstAttribute="bottom" secondItem="oAz-2i-kUM" secondAttribute="bottom" constant="-5" id="fKO-Y4-Lnq"/>
+                            <constraint firstItem="CNN-Fn-6bN" firstAttribute="trailing" secondItem="QAY-i0-ha1" secondAttribute="trailing" id="khz-tK-VCR"/>
+                            <constraint firstItem="Ksn-Kt-cah" firstAttribute="leading" secondItem="QAY-i0-ha1" secondAttribute="leading" constant="10" id="li2-ZN-46L"/>
+                            <constraint firstItem="ixp-O3-VJJ" firstAttribute="leading" secondItem="Ksn-Kt-cah" secondAttribute="trailing" constant="15" id="qZJ-te-XsL"/>
+                            <constraint firstItem="CNN-Fn-6bN" firstAttribute="top" secondItem="rzP-qe-bLd" secondAttribute="bottom" constant="15" id="rbK-Yc-IjB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="AJ1-Gg-7gk" secondAttribute="trailing" constant="-16" id="t0R-Hd-mBB"/>
                             <constraint firstAttribute="trailing" secondItem="QAY-i0-ha1" secondAttribute="trailing" id="tbg-B3-dqf"/>
+                            <constraint firstItem="oAz-2i-kUM" firstAttribute="trailing" secondItem="QAY-i0-ha1" secondAttribute="trailing" constant="-10" id="v7q-dH-eKF"/>
                             <constraint firstItem="Zpl-ib-yr6" firstAttribute="top" secondItem="QAY-i0-ha1" secondAttribute="bottom" constant="80" id="vDD-yf-Xo4"/>
                             <constraint firstItem="QAY-i0-ha1" firstAttribute="leading" secondItem="9tj-f4-5Oe" secondAttribute="leading" id="xwS-mu-Su7"/>
                         </constraints>
@@ -45,6 +91,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="freepikLogo" width="60" height="60"/>
         <image name="launchImage" width="600" height="600"/>
+        <image name="pixabayLogo" width="60" height="60"/>
     </resources>
 </document>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View View Controller-->
+        <scene sceneID="QCr-dO-AGm">
+            <objects>
+                <viewController storyboardIdentifier="PAVDetailViewViewController" id="FE9-q6-YKE" customClass="PAVDetailViewViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UqF-Mo-C8a"/>
+                        <viewControllerLayoutGuide type="bottom" id="dym-BN-YpW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qOD-lm-iBp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QXa-QL-dat"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fH1-yY-lua">
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HxP-eO-eyS">
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hZf-L2-r5I">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.79563301801681519" green="0.77483171224594116" blue="0.7992510199546814" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="HxP-eO-eyS" secondAttribute="trailing" id="2df-mz-nLV"/>
+                                    <constraint firstAttribute="height" constant="150" id="4dE-iC-LFm"/>
+                                    <constraint firstAttribute="bottom" secondItem="HxP-eO-eyS" secondAttribute="bottom" constant="8" id="7hw-Mg-wPN"/>
+                                    <constraint firstItem="HxP-eO-eyS" firstAttribute="leading" secondItem="fH1-yY-lua" secondAttribute="leading" id="8hQ-41-J3f"/>
+                                    <constraint firstItem="HxP-eO-eyS" firstAttribute="top" secondItem="fH1-yY-lua" secondAttribute="top" constant="8" id="BLh-79-GXz"/>
+                                </constraints>
+                            </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="wOJ-Km-ZMx"/>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1075401515" green="0.0" blue="0.11407059579999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fH1-yY-lua" firstAttribute="leading" secondItem="qOD-lm-iBp" secondAttribute="leading" id="A99-nl-gll"/>
+                            <constraint firstItem="fH1-yY-lua" firstAttribute="top" secondItem="QXa-QL-dat" secondAttribute="bottom" constant="30" id="D5B-Gc-MN8"/>
+                            <constraint firstItem="dym-BN-YpW" firstAttribute="top" secondItem="fH1-yY-lua" secondAttribute="bottom" constant="8" id="ES2-Sf-QAd"/>
+                            <constraint firstItem="QXa-QL-dat" firstAttribute="leading" secondItem="qOD-lm-iBp" secondAttribute="leading" id="U9B-Xj-S1q"/>
+                            <constraint firstItem="wOJ-Km-ZMx" firstAttribute="centerY" secondItem="QXa-QL-dat" secondAttribute="centerY" id="Xv1-o1-HP1"/>
+                            <constraint firstAttribute="trailing" secondItem="fH1-yY-lua" secondAttribute="trailing" id="d4F-7B-YSU"/>
+                            <constraint firstItem="QXa-QL-dat" firstAttribute="top" secondItem="UqF-Mo-C8a" secondAttribute="bottom" constant="30" id="kOJ-hQ-Pia"/>
+                            <constraint firstAttribute="trailing" secondItem="QXa-QL-dat" secondAttribute="trailing" id="kbe-xR-YqE"/>
+                            <constraint firstItem="wOJ-Km-ZMx" firstAttribute="centerX" secondItem="QXa-QL-dat" secondAttribute="centerX" id="lk3-Ej-D47"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="wOJ-Km-ZMx" id="88b-es-5Mn"/>
+                        <outlet property="bottomCollectionView" destination="HxP-eO-eyS" id="ltl-tu-Lwf"/>
+                        <outlet property="mainImageView" destination="QXa-QL-dat" id="Iyf-rc-5X7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5AA-S6-kDO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104.8" y="236.13193403298354"/>
+        </scene>
+    </scenes>
+</document>

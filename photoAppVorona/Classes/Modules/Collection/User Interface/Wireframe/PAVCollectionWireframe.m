@@ -51,4 +51,9 @@ static NSString *CollectionViewControllerStoryboardName = @"PAVCollectionView";
     return storyboard;
 }
 
+- (void)showDetailViewWithPhotoID:(NSNumber *)photoID inPhotoItems:(NSArray *)photoItems
+{
+    [self.detailViewWireframe pushDetailViewForPhotoID:photoID inPhotoItems:photoItems intoNavigationController:self.viewController.navigationController];
+}
+
 @end

@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "NSJSONSerialization+Utils.h"
+
 @interface PAVPhotoListJSONParser : NSObject
 
 + (NSArray *)parsePhotoList:(NSDictionary *)json;

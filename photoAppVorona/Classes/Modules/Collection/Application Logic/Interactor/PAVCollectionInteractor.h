@@ -10,8 +10,9 @@
 
 #import "PAVCollectionInteractorIO.h"
 #import "PAVNetworkManager.h"
+#import "PAVLoadingSessionDelegate.h"
 
-@interface PAVCollectionInteractor : NSObject <PAVCollectionInteractorInput>
+@interface PAVCollectionInteractor : NSObject <PAVCollectionInteractorInput, PAVLoadinSessionDelegate>
 
 @property (nonatomic, strong) id<PAVCollectionInteractorOutput> output;
 @property (nonatomic, strong) PAVNetworkManager *networkManager;

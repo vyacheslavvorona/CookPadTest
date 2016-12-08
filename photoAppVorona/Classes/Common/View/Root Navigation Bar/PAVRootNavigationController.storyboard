@@ -10,9 +10,13 @@
         <scene sceneID="tar-9a-le1">
             <objects>
                 <navigationController storyboardIdentifier="PAVRootNavController" id="5yj-4m-eBk" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FB8-yD-qk1">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="FB8-yD-qk1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.37417326289158542" green="0.25112513401007652" blue="0.68258176813471505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.37417326289158542" green="0.25112513401007652" blue="0.68258176813471505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g7B-jI-jjd" userLabel="First Responder" sceneMemberID="firstResponder"/>

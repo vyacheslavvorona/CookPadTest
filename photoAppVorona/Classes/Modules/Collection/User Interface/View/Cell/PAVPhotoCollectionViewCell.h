@@ -10,4 +10,6 @@
 
 @interface PAVPhotoCollectionViewCell : UICollectionViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *photoImageView;
+
 @end

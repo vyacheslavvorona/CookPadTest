@@ -9,5 +9,6 @@
 @protocol PAVCollectionViewInterface <NSObject>
 
 - (void)showNoConnectionMessage;
+- (void)setPhotoDisplayData:(NSArray *)displayData;
 
 @end

@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "AFNetworking.h"
 
+#import "PAVLoadingSessionDelegate.h"
+
 @interface PAVNetworkManager : AFHTTPSessionManager
 
 - (nonnull instancetype)initNetworkManager;
@@ -17,5 +19,8 @@
                            FailBlock:(void (^)(NSURLSessionDataTask *task, NSError *error))failBlock
                        andParameters:(NSMutableDictionary *)params;
 
+- (void)downloadPhotoWithID:(NSNumber *)photoID
+                      byURL:(NSString *)photoURL
+                  forOutput:(id<PAVLoadinSessionDelegate>)output;
 @end
 

@@ -16,6 +16,14 @@
 #import "PAVCollectionPresenter.h"
 #import "PAVCollectionInteractor.h"
 
+#import "PAVDetailViewWireframe.h"
+#import "PAVDetailViewPresenter.h"
+#import "PAVDetailViewInteractor.h"
+
+#import "PAVFullScreenWireframe.h"
+#import "PAVFullScreenPresenter.h"
+#import "PAVFullScreenInteractor.h"
+
 @interface AppDependencies()
 
 @property (nonatomic, strong) PAVRootNavigationBarWireframe *navBarWireframe;
@@ -54,6 +62,16 @@
     PAVCollectionPresenter *collectionPresenter = [[PAVCollectionPresenter alloc] init];
     PAVCollectionInteractor *collectionInteractor = [[PAVCollectionInteractor alloc] init];
     
+    //Detail View classes
+    PAVDetailViewWireframe *detailViewWireframe = [[PAVDetailViewWireframe alloc] init];
+    PAVDetailViewPresenter *detailViewPresenter = [[PAVDetailViewPresenter alloc] init];
+    PAVDetailViewInteractor *detailViewInteractor = [[PAVDetailViewInteractor alloc] init];
+    
+    //Full Screen classes
+    PAVFullScreenWireframe *fullScreenWireframe = [[PAVFullScreenWireframe alloc] init];
+    PAVFullScreenPresenter *fullScreenPresenter = [[PAVFullScreenPresenter alloc] init];
+    PAVFullScreenInteractor *fullScreenInteractor = [[PAVFullScreenInteractor alloc] init];
+    
     // === Dependencies ===
     
     //Navigation Controller
@@ -65,7 +83,21 @@
     collectionPresenter.collectionInteractor = collectionInteractor;
     collectionInteractor.output = collectionPresenter;
     collectionInteractor.networkManager = networkManager;
+    collectionWireframe.detailViewWireframe = detailViewWireframe;
     
+    //Detail View classes
+    detailViewWireframe.detailViewPresenter = detailViewPresenter;
+    detailViewPresenter.detailViewWireframe = detailViewWireframe;
+    detailViewPresenter.detailViewInteractor = detailViewInteractor;
+    detailViewInteractor.output = detailViewPresenter;
+    detailViewInteractor.networkManager = networkManager;
+    detailViewWireframe.fullScreenWireframe = fullScreenWireframe;
+    
+    //Full Screen classes
+    fullScreenWireframe.fullScreenPresenter = fullScreenPresenter;
+    fullScreenPresenter.fullscreenWireframe = fullScreenWireframe;
+    fullScreenPresenter.fullScreenInteractor = fullScreenInteractor;
+    fullScreenInteractor.output = fullScreenPresenter;
 }
 
 @end

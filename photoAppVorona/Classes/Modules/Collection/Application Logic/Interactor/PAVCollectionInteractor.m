@@ -10,7 +10,22 @@
 
 #import "PAVPhotoListJSONParser.h"
 
+@interface PAVCollectionInteractor()
+
+@property (nonatomic) int page;
+
+@end
+
 @implementation PAVCollectionInteractor
+
+- (id)init
+{
+    self = [super init];
+    
+    self.page = 0;
+    
+    return self;
+}
 
 - (void)loadPhotoList
 {
@@ -20,12 +35,16 @@
 
 - (void)startLoading
 {
+    self.page++;
+    
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    [params setObject:[NSNumber numberWithInt:30] forKey:@"per_page"];
+    [params setObject:[NSNumber numberWithInt:100] forKey:@"per_page"];
+    [params setObject:[NSNumber numberWithInt:self.page] forKey:@"page"];
     
     [self.networkManager getPhotoListWithSuccessBlock:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
         
         NSArray *listItems = [PAVPhotoListJSONParser parsePhotoList:responseObject];
+        [self.output receivedPhotoItems:listItems];
         
     } FailBlock:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
         
@@ -41,6 +60,23 @@
         }
         
     } andParameters:params];
+}
+
+#pragma mark - Particular Photo Loading
+
+- (void)loadPhotoWithID:(NSNumber *)photoID byURL:(NSString *)photoURL
+{
+    [self.networkManager downloadPhotoWithID:photoID byURL:photoURL forOutput:self];
+}
+
+- (void)didLoadPhoto:(UIImage *)photo forID:(NSNumber *)photoID
+{
+    [self.output didLoadPhoto:photo forID:photoID];
+}
+
+- (void)failedToLoadPhotoForID:(NSNumber *)photoID
+{
+    [self.output failedToLoadPhotoforID:photoID];
 }
 
 @end

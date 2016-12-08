@@ -11,5 +11,7 @@
 @protocol PAVCollectionModuleInterface <NSObject>
 
 - (void)loadPhotoList;
+- (void)photoWillAppear:(NSNumber *)photoID;
+- (void)didSelectPhotoWithID:(NSNumber *)photoID;
 
 @end
