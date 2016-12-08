@@ -10,4 +10,14 @@
 
 @implementation PAVCollectionPresenter
 
+- (void)loadPhotoList
+{
+    [self.collectionInteractor loadPhotoList];
+}
+
+- (void)noConnectionMessage
+{
+    [self.userInterface showNoConnectionMessage];
+}
+
 @end

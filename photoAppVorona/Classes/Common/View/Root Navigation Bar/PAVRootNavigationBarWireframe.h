@@ -9,8 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#import "PAVCollectionWireframe.h"
+
 @interface PAVRootNavigationBarWireframe : NSObject
 
-- (void)showRootnavigationControllerInWindow:(UIWindow *)window;
+@property (nonatomic, strong) PAVCollectionWireframe *collectionWireframe;
+
+- (void)showRootNavigationControllerInWindow:(UIWindow *)window;
 
 @end

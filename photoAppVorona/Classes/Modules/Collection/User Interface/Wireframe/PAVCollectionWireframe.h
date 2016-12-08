@@ -11,6 +11,8 @@
 
 #import "PAVCollectionPresenter.h"
 
+@class PAVCollectionPresenter;
+
 @interface PAVCollectionWireframe : NSObject
 
 @property (nonatomic, strong) PAVCollectionPresenter *collectionPresenter;

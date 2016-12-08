@@ -10,12 +10,15 @@
 
 #import "PAVCollectionWireframe.h"
 #import "PAVCollectionInteractorIO.h"
+#import "PAVCollectionModuleInterface.h"
+#import "PAVCollectionViewInterface.h"
 
 @class PAVCollectionWireframe;
 
-@interface PAVCollectionPresenter : NSObject <PAVCollectionInteractorOutput>
+@interface PAVCollectionPresenter : NSObject <PAVCollectionInteractorOutput, PAVCollectionModuleInterface>
 
 @property (nonatomic, strong) PAVCollectionWireframe *collectionWireframe;
 @property (nonatomic, strong) id<PAVCollectionInteractorInput> collectionInteractor;
+@property (nonatomic, strong) UIViewController<PAVCollectionViewInterface> *userInterface;
 
 @end

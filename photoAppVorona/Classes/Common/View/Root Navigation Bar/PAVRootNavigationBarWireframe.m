@@ -7,18 +7,16 @@
 //
 
 #import "PAVRootNavigationBarWireframe.h"
-#import "PAVCollectionWireframe.h"
 
 static NSString *NavControllerIdentifier = @"PAVRootNavController";
 static NSString *NavControllerStoryboardName = @"PAVRootNavigationController";
 
 @implementation PAVRootNavigationBarWireframe
 
-- (void)showRootnavigationControllerInWindow:(UIWindow *)window
+- (void)showRootNavigationControllerInWindow:(UIWindow *)window
 {
     UINavigationController *rootNavigationController = [self navigationControllerFromStoryboard];
-    
-    
+    [self.collectionWireframe setRootViewControllerForNavigationController:rootNavigationController];
     [window setRootViewController:rootNavigationController];
 }
 

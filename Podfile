@@ -2,9 +2,7 @@
 # platform :ios, '9.0'
 
 target 'photoAppVorona' do
-  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-  # use_frameworks!
-
-  # Pods for photoAppVorona
+    
+    pod 'AFNetworking', '~> 2.5'
 
 end

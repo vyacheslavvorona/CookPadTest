@@ -9,9 +9,11 @@
 #import <Foundation/Foundation.h>
 
 #import "PAVCollectionInteractorIO.h"
+#import "PAVNetworkManager.h"
 
 @interface PAVCollectionInteractor : NSObject <PAVCollectionInteractorInput>
 
 @property (nonatomic, strong) id<PAVCollectionInteractorOutput> output;
+@property (nonatomic, strong) PAVNetworkManager *networkManager;
 
 @end

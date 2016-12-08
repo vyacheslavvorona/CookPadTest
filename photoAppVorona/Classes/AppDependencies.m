@@ -10,6 +10,8 @@
 
 #import "PAVRootNavigationBarWireframe.h"
 
+#import "PAVNetworkManager.h"
+
 #import "PAVCollectionWireframe.h"
 #import "PAVCollectionPresenter.h"
 #import "PAVCollectionInteractor.h"
@@ -34,12 +36,18 @@
 
 - (void)installRootViewControllerIntoWindow:(UIWindow *)window
 {
-    [self.navBarWireframe showRootnavigationControllerInWindow:window];
+    [self.navBarWireframe showRootNavigationControllerInWindow:window];
 }
 
 - (void)configureDependencies
 {
     // === Initialization ===
+    
+    //Common classes
+    PAVNetworkManager *networkManager = [[PAVNetworkManager alloc] initNetworkManager];
+    
+    //Navigation Controller
+    self.navBarWireframe = [[PAVRootNavigationBarWireframe alloc] init];
     
     //Collection classes
     PAVCollectionWireframe *collectionWireframe = [[PAVCollectionWireframe alloc] init];
@@ -48,11 +56,15 @@
     
     // === Dependencies ===
     
+    //Navigation Controller
+    self.navBarWireframe.collectionWireframe = collectionWireframe;
+    
     //Collection classes
     collectionWireframe.collectionPresenter = collectionPresenter;
     collectionPresenter.collectionWireframe = collectionWireframe;
     collectionPresenter.collectionInteractor = collectionInteractor;
     collectionInteractor.output = collectionPresenter;
+    collectionInteractor.networkManager = networkManager;
     
 }
 

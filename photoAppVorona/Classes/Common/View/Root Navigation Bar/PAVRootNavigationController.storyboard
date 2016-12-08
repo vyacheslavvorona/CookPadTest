@@ -13,12 +13,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FB8-yD-qk1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.45000000000000001" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g7B-jI-jjd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="575" y="124"/>
+            <point key="canvasLocation" x="642" y="41"/>
         </scene>
     </scenes>
 </document>

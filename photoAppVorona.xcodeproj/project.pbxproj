@@ -20,6 +20,13 @@
 		0C623BCC1DF89B64002F923E /* PAVCollectionWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C623BCB1DF89B64002F923E /* PAVCollectionWireframe.m */; };
 		0C623BD01DF89C00002F923E /* PAVCollectionPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C623BCF1DF89C00002F923E /* PAVCollectionPresenter.m */; };
 		0C623BD51DF8A536002F923E /* PAVCollectionInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C623BD41DF8A536002F923E /* PAVCollectionInteractor.m */; };
+		0C623BD91DF8B116002F923E /* PAVCollectionView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C623BD81DF8B116002F923E /* PAVCollectionView.storyboard */; };
+		0C623BDC1DF8B137002F923E /* PAVCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C623BDB1DF8B137002F923E /* PAVCollectionViewController.m */; };
+		0CE7EB4B1DF92CFB00879E95 /* PAVPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE7EB491DF92CFB00879E95 /* PAVPhotoCollectionViewCell.m */; };
+		0CE7EB4C1DF92CFB00879E95 /* PAVPhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CE7EB4A1DF92CFB00879E95 /* PAVPhotoCollectionViewCell.xib */; };
+		0CE7EB581DF93E6700879E95 /* PAVNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE7EB571DF93E6700879E95 /* PAVNetworkManager.m */; };
+		0CE7EB5C1DF9500F00879E95 /* PAVDeviceDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE7EB5B1DF9500F00879E95 /* PAVDeviceDetector.m */; };
+		0CE7EB601DF9509200879E95 /* PAVPhotoListJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE7EB5F1DF9509200879E95 /* PAVPhotoListJSONParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +54,21 @@
 		0C623BD31DF8A536002F923E /* PAVCollectionInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAVCollectionInteractor.h; sourceTree = "<group>"; };
 		0C623BD41DF8A536002F923E /* PAVCollectionInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAVCollectionInteractor.m; sourceTree = "<group>"; };
 		0C623BD61DF8A71E002F923E /* PAVCollectionInteractorIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PAVCollectionInteractorIO.h; sourceTree = "<group>"; };
+		0C623BD81DF8B116002F923E /* PAVCollectionView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PAVCollectionView.storyboard; sourceTree = "<group>"; };
+		0C623BDA1DF8B137002F923E /* PAVCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAVCollectionViewController.h; sourceTree = "<group>"; };
+		0C623BDB1DF8B137002F923E /* PAVCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAVCollectionViewController.m; sourceTree = "<group>"; };
+		0C623BDD1DF8B2CE002F923E /* PAVCollectionModuleInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PAVCollectionModuleInterface.h; sourceTree = "<group>"; };
+		0C623BDE1DF8B437002F923E /* PAVCollectionViewInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PAVCollectionViewInterface.h; sourceTree = "<group>"; };
+		0CE7EB481DF92CFB00879E95 /* PAVPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAVPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		0CE7EB491DF92CFB00879E95 /* PAVPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAVPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		0CE7EB4A1DF92CFB00879E95 /* PAVPhotoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PAVPhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		0CE7EB561DF93E6700879E95 /* PAVNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAVNetworkManager.h; sourceTree = "<group>"; };
+		0CE7EB571DF93E6700879E95 /* PAVNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAVNetworkManager.m; sourceTree = "<group>"; };
+		0CE7EB5A1DF9500F00879E95 /* PAVDeviceDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAVDeviceDetector.h; sourceTree = "<group>"; };
+		0CE7EB5B1DF9500F00879E95 /* PAVDeviceDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAVDeviceDetector.m; sourceTree = "<group>"; };
+		0CE7EB5E1DF9509200879E95 /* PAVPhotoListJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAVPhotoListJSONParser.h; sourceTree = "<group>"; };
+		0CE7EB5F1DF9509200879E95 /* PAVPhotoListJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAVPhotoListJSONParser.m; sourceTree = "<group>"; };
+		0CE7EB621DF95D0200879E95 /* PAVConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PAVConstants.h; sourceTree = "<group>"; };
 		918303D2881AF941EEE76728 /* libPods-photoAppVorona.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-photoAppVorona.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF0386DAE838F19F47C3F11D /* Pods-photoAppVorona.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoAppVorona.release.xcconfig"; path = "Pods/Target Support Files/Pods-photoAppVorona/Pods-photoAppVorona.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +118,7 @@
 			children = (
 				0C623B981DF87E2D002F923E /* Info.plist */,
 				0C623B881DF87E2D002F923E /* main.m */,
+				0CE7EB621DF95D0200879E95 /* PAVConstants.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -134,6 +157,8 @@
 		0C623BA21DF8807E002F923E /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				0CE7EB551DF93D3C00879E95 /* Network */,
+				0CE7EB4E1DF9333E00879E95 /* Utilities */,
 				0C623BBC1DF89190002F923E /* View */,
 			);
 			path = Common;
@@ -205,6 +230,7 @@
 		0C623BC71DF8987C002F923E /* Module Interface */ = {
 			isa = PBXGroup;
 			children = (
+				0C623BDD1DF8B2CE002F923E /* PAVCollectionModuleInterface.h */,
 			);
 			path = "Module Interface";
 			sourceTree = "<group>";
@@ -212,6 +238,7 @@
 		0C623BC81DF898A3002F923E /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
+				0C623BD71DF8B0E0002F923E /* View */,
 				0C623BCD1DF89BD7002F923E /* Presenter */,
 				0C623BC91DF89B40002F923E /* Wireframe */,
 			);
@@ -244,6 +271,64 @@
 				0C623BD61DF8A71E002F923E /* PAVCollectionInteractorIO.h */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0C623BD71DF8B0E0002F923E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0CE7EB441DF92CA700879E95 /* Cell */,
+				0C623BD81DF8B116002F923E /* PAVCollectionView.storyboard */,
+				0C623BDA1DF8B137002F923E /* PAVCollectionViewController.h */,
+				0C623BDB1DF8B137002F923E /* PAVCollectionViewController.m */,
+				0C623BDE1DF8B437002F923E /* PAVCollectionViewInterface.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0CE7EB441DF92CA700879E95 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0CE7EB481DF92CFB00879E95 /* PAVPhotoCollectionViewCell.h */,
+				0CE7EB491DF92CFB00879E95 /* PAVPhotoCollectionViewCell.m */,
+				0CE7EB4A1DF92CFB00879E95 /* PAVPhotoCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		0CE7EB4E1DF9333E00879E95 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0CE7EB5D1DF9501800879E95 /* Photo List Parser */,
+				0CE7EB591DF94FE200879E95 /* Device Detector */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		0CE7EB551DF93D3C00879E95 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0CE7EB561DF93E6700879E95 /* PAVNetworkManager.h */,
+				0CE7EB571DF93E6700879E95 /* PAVNetworkManager.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0CE7EB591DF94FE200879E95 /* Device Detector */ = {
+			isa = PBXGroup;
+			children = (
+				0CE7EB5A1DF9500F00879E95 /* PAVDeviceDetector.h */,
+				0CE7EB5B1DF9500F00879E95 /* PAVDeviceDetector.m */,
+			);
+			path = "Device Detector";
+			sourceTree = "<group>";
+		};
+		0CE7EB5D1DF9501800879E95 /* Photo List Parser */ = {
+			isa = PBXGroup;
+			children = (
+				0CE7EB5E1DF9509200879E95 /* PAVPhotoListJSONParser.h */,
+				0CE7EB5F1DF9509200879E95 /* PAVPhotoListJSONParser.m */,
+			);
+			path = "Photo List Parser";
 			sourceTree = "<group>";
 		};
 		7CC061C6699F220AE797F1F7 /* Pods */ = {
@@ -325,6 +410,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C623B971DF87E2D002F923E /* LaunchScreen.storyboard in Resources */,
+				0C623BD91DF8B116002F923E /* PAVCollectionView.storyboard in Resources */,
+				0CE7EB4C1DF92CFB00879E95 /* PAVPhotoCollectionViewCell.xib in Resources */,
 				0C623B941DF87E2D002F923E /* Assets.xcassets in Resources */,
 				0C623BC41DF89219002F923E /* PAVRootNavigationController.storyboard in Resources */,
 			);
@@ -386,11 +473,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C623BC31DF89219002F923E /* PAVRootNavigationBarWireframe.m in Sources */,
+				0CE7EB581DF93E6700879E95 /* PAVNetworkManager.m in Sources */,
 				0C623BB11DF889FE002F923E /* CALayer+XibConfiguration.m in Sources */,
+				0CE7EB5C1DF9500F00879E95 /* PAVDeviceDetector.m in Sources */,
 				0C623BA51DF880E6002F923E /* AppDependencies.m in Sources */,
 				0C623B8C1DF87E2D002F923E /* AppDelegate.m in Sources */,
+				0CE7EB4B1DF92CFB00879E95 /* PAVPhotoCollectionViewCell.m in Sources */,
+				0CE7EB601DF9509200879E95 /* PAVPhotoListJSONParser.m in Sources */,
 				0C623BD51DF8A536002F923E /* PAVCollectionInteractor.m in Sources */,
 				0C623BB71DF88A29002F923E /* UIColor+MIAdditions.m in Sources */,
+				0C623BDC1DF8B137002F923E /* PAVCollectionViewController.m in Sources */,
 				0C623BCC1DF89B64002F923E /* PAVCollectionWireframe.m in Sources */,
 				0C623BD01DF89C00002F923E /* PAVCollectionPresenter.m in Sources */,
 				0C623B891DF87E2D002F923E /* main.m in Sources */,
@@ -506,6 +598,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = photoAppVorona/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cookpadTest.photoAppVorona;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -518,6 +611,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = photoAppVorona/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cookpadTest.photoAppVorona;
 				PRODUCT_NAME = "$(TARGET_NAME)";

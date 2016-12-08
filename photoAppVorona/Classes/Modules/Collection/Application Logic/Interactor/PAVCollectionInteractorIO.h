@@ -10,9 +10,13 @@
 
 @protocol PAVCollectionInteractorInput <NSObject>
 
+- (void)loadPhotoList;
+
 @end
 
 
 @protocol PAVCollectionInteractorOutput <NSObject>
+
+- (void)noConnectionMessage;
 
 @end
