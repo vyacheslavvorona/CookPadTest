@@ -7,11 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03249BF51FA5572400FCECCC /* NSJSONSerialization+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 03249BF41FA5572400FCECCC /* NSJSONSerialization+Utils.m */; };
+		03249BF91FA557B300FCECCC /* PAVPhotoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 03249BF81FA557B300FCECCC /* PAVPhotoItem.m */; };
+		03249BFD1FA5589F00FCECCC /* PAVPhotoDisplayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 03249BFC1FA5589F00FCECCC /* PAVPhotoDisplayItem.m */; };
+		03249C2A1FA5594400FCECCC /* PAVDetailViewInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 03249C081FA5594400FCECCC /* PAVDetailViewInteractor.m */; };
+		03249C2B1FA5594400FCECCC /* PAVDetailViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 03249C0D1FA5594400FCECCC /* PAVDetailViewPresenter.m */; };
+		03249C2C1FA5594400FCECCC /* PAVDetailViewWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 03249C101FA5594400FCECCC /* PAVDetailViewWireframe.m */; };
+		03249C2D1FA5594400FCECCC /* PAVDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03249C121FA5594400FCECCC /* PAVDetailView.storyboard */; };
+		03249C2E1FA5594400FCECCC /* PAVDetailViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03249C131FA5594400FCECCC /* PAVDetailViewViewController.m */; };
+		03249C2F1FA5594400FCECCC /* PAVFullScreenInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 03249C1D1FA5594400FCECCC /* PAVFullScreenInteractor.m */; };
+		03249C301FA5594400FCECCC /* PAVFullScreenPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 03249C211FA5594400FCECCC /* PAVFullScreenPresenter.m */; };
+		03249C311FA5594400FCECCC /* PAVFullScreenWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 03249C241FA5594400FCECCC /* PAVFullScreenWireframe.m */; };
+		03249C321FA5594400FCECCC /* PAVFullScreenView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03249C271FA5594400FCECCC /* PAVFullScreenView.storyboard */; };
+		03249C331FA5594400FCECCC /* PAVFullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03249C291FA5594400FCECCC /* PAVFullScreenViewController.m */; };
+		03249C381FA5597900FCECCC /* PAVPhotoLoadingSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 03249C371FA5597900FCECCC /* PAVPhotoLoadingSession.m */; };
+		03249C3B1FA55A0C00FCECCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03249C391FA55A0C00FCECCC /* LaunchScreen.storyboard */; };
 		05F1C6C096E83EF156F49C26 /* libPods-photoAppVorona.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 918303D2881AF941EEE76728 /* libPods-photoAppVorona.a */; };
 		0C623B891DF87E2D002F923E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C623B881DF87E2D002F923E /* main.m */; };
 		0C623B8C1DF87E2D002F923E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C623B8B1DF87E2D002F923E /* AppDelegate.m */; };
-		0C623B941DF87E2D002F923E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C623B931DF87E2D002F923E /* Assets.xcassets */; };
-		0C623B971DF87E2D002F923E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C623B951DF87E2D002F923E /* LaunchScreen.storyboard */; };
 		0C623BA51DF880E6002F923E /* AppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C623BA41DF880E6002F923E /* AppDependencies.m */; };
 		0C623BB11DF889FE002F923E /* CALayer+XibConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C623BB01DF889FE002F923E /* CALayer+XibConfiguration.m */; };
 		0C623BB71DF88A29002F923E /* UIColor+MIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C623BB61DF88A29002F923E /* UIColor+MIAdditions.m */; };
@@ -30,13 +43,46 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		031174D81FA555E800D19AD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03249BF31FA5572400FCECCC /* NSJSONSerialization+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSJSONSerialization+Utils.h"; sourceTree = "<group>"; };
+		03249BF41FA5572400FCECCC /* NSJSONSerialization+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSJSONSerialization+Utils.m"; sourceTree = "<group>"; };
+		03249BF71FA557B300FCECCC /* PAVPhotoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAVPhotoItem.h; sourceTree = "<group>"; };
+		03249BF81FA557B300FCECCC /* PAVPhotoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAVPhotoItem.m; sourceTree = "<group>"; };
+		03249BFB1FA5589F00FCECCC /* PAVPhotoDisplayItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PAVPhotoDisplayItem.h; path = "photoAppVorona/Classes/Common/View/Photo Display Item/PAVPhotoDisplayItem.h"; sourceTree = SOURCE_ROOT; };
+		03249BFC1FA5589F00FCECCC /* PAVPhotoDisplayItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PAVPhotoDisplayItem.m; path = "photoAppVorona/Classes/Common/View/Photo Display Item/PAVPhotoDisplayItem.m"; sourceTree = SOURCE_ROOT; };
+		03249C041FA5594400FCECCC /* PAVDetailViewModuleInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAVDetailViewModuleInterface.h; sourceTree = "<group>"; };
+		03249C071FA5594400FCECCC /* PAVDetailViewInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAVDetailViewInteractor.h; sourceTree = "<group>"; };
+		03249C081FA5594400FCECCC /* PAVDetailViewInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAVDetailViewInteractor.m; sourceTree = "<group>"; };
+		03249C091FA5594400FCECCC /* PAVDetailViewInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAVDetailViewInteractorIO.h; sourceTree = "<group>"; };
+		03249C0C1FA5594400FCECCC /* PAVDetailViewPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAVDetailViewPresenter.h; sourceTree = "<group>"; };
+		03249C0D1FA5594400FCECCC /* PAVDetailViewPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAVDetailViewPresenter.m; sourceTree = "<group>"; };
+		03249C0F1FA5594400FCECCC /* PAVDetailViewWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAVDetailViewWireframe.h; sourceTree = "<group>"; };
+		03249C101FA5594400FCECCC /* PAVDetailViewWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAVDetailViewWireframe.m; sourceTree = "<group>"; };
+		03249C121FA5594400FCECCC /* PAVDetailView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PAVDetailView.storyboard; sourceTree = "<group>"; };
+		03249C131FA5594400FCECCC /* PAVDetailViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAVDetailViewViewController.m; sourceTree = "<group>"; };
+		03249C141FA5594400FCECCC /* PAVDetailViewViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAVDetailViewViewInterface.h; sourceTree = "<group>"; };
+		03249C151FA5594400FCECCC /* PAVDetailViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAVDetailViewViewController.h; sourceTree = "<group>"; };
+		03249C181FA5594400FCECCC /* PAVFullScreenModuleInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAVFullScreenModuleInterface.h; sourceTree = "<group>"; };
+		03249C1B1FA5594400FCECCC /* PAVFullScreenInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAVFullScreenInteractor.h; sourceTree = "<group>"; };
+		03249C1C1FA5594400FCECCC /* PAVFullScreenInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAVFullScreenInteractorIO.h; sourceTree = "<group>"; };
+		03249C1D1FA5594400FCECCC /* PAVFullScreenInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAVFullScreenInteractor.m; sourceTree = "<group>"; };
+		03249C201FA5594400FCECCC /* PAVFullScreenPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAVFullScreenPresenter.h; sourceTree = "<group>"; };
+		03249C211FA5594400FCECCC /* PAVFullScreenPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAVFullScreenPresenter.m; sourceTree = "<group>"; };
+		03249C231FA5594400FCECCC /* PAVFullScreenWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAVFullScreenWireframe.h; sourceTree = "<group>"; };
+		03249C241FA5594400FCECCC /* PAVFullScreenWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAVFullScreenWireframe.m; sourceTree = "<group>"; };
+		03249C261FA5594400FCECCC /* PAVFullScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAVFullScreenViewController.h; sourceTree = "<group>"; };
+		03249C271FA5594400FCECCC /* PAVFullScreenView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PAVFullScreenView.storyboard; sourceTree = "<group>"; };
+		03249C281FA5594400FCECCC /* PAVFullScreenViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAVFullScreenViewInterface.h; sourceTree = "<group>"; };
+		03249C291FA5594400FCECCC /* PAVFullScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAVFullScreenViewController.m; sourceTree = "<group>"; };
+		03249C351FA5597900FCECCC /* PAVPhotoLoadingSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAVPhotoLoadingSession.h; sourceTree = "<group>"; };
+		03249C361FA5597900FCECCC /* PAVLoadingSessionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAVLoadingSessionDelegate.h; sourceTree = "<group>"; };
+		03249C371FA5597900FCECCC /* PAVPhotoLoadingSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAVPhotoLoadingSession.m; sourceTree = "<group>"; };
+		03249C3A1FA55A0C00FCECCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		038A21614C76D9D9EA6469F4 /* Pods-photoAppVorona.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoAppVorona.debug.xcconfig"; path = "Pods/Target Support Files/Pods-photoAppVorona/Pods-photoAppVorona.debug.xcconfig"; sourceTree = "<group>"; };
 		0C623B841DF87E2D002F923E /* photoAppVorona.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = photoAppVorona.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C623B881DF87E2D002F923E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0C623B8A1DF87E2D002F923E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
 		0C623B8B1DF87E2D002F923E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
-		0C623B931DF87E2D002F923E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
-		0C623B961DF87E2D002F923E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C623B981DF87E2D002F923E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C623BA31DF880E6002F923E /* AppDependencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDependencies.h; sourceTree = "<group>"; };
 		0C623BA41DF880E6002F923E /* AppDependencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDependencies.m; sourceTree = "<group>"; };
@@ -85,6 +131,194 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03249BF21FA556F600FCECCC /* NSJSONSerialization+Utils */ = {
+			isa = PBXGroup;
+			children = (
+				03249BF31FA5572400FCECCC /* NSJSONSerialization+Utils.h */,
+				03249BF41FA5572400FCECCC /* NSJSONSerialization+Utils.m */,
+			);
+			path = "NSJSONSerialization+Utils";
+			sourceTree = "<group>";
+		};
+		03249BF61FA5579E00FCECCC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				03249BF71FA557B300FCECCC /* PAVPhotoItem.h */,
+				03249BF81FA557B300FCECCC /* PAVPhotoItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		03249BFA1FA5584E00FCECCC /* Photo Display Item */ = {
+			isa = PBXGroup;
+			children = (
+				03249BFB1FA5589F00FCECCC /* PAVPhotoDisplayItem.h */,
+				03249BFC1FA5589F00FCECCC /* PAVPhotoDisplayItem.m */,
+			);
+			name = "Photo Display Item";
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		03249C021FA5594400FCECCC /* Detail View */ = {
+			isa = PBXGroup;
+			children = (
+				03249C031FA5594400FCECCC /* Module Interface */,
+				03249C051FA5594400FCECCC /* Application Logic */,
+				03249C0A1FA5594400FCECCC /* User Interface */,
+			);
+			path = "Detail View";
+			sourceTree = "<group>";
+		};
+		03249C031FA5594400FCECCC /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				03249C041FA5594400FCECCC /* PAVDetailViewModuleInterface.h */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		03249C051FA5594400FCECCC /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				03249C061FA5594400FCECCC /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		03249C061FA5594400FCECCC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				03249C071FA5594400FCECCC /* PAVDetailViewInteractor.h */,
+				03249C081FA5594400FCECCC /* PAVDetailViewInteractor.m */,
+				03249C091FA5594400FCECCC /* PAVDetailViewInteractorIO.h */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		03249C0A1FA5594400FCECCC /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				03249C0B1FA5594400FCECCC /* Presenter */,
+				03249C0E1FA5594400FCECCC /* Wireframe */,
+				03249C111FA5594400FCECCC /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		03249C0B1FA5594400FCECCC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				03249C0C1FA5594400FCECCC /* PAVDetailViewPresenter.h */,
+				03249C0D1FA5594400FCECCC /* PAVDetailViewPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		03249C0E1FA5594400FCECCC /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				03249C0F1FA5594400FCECCC /* PAVDetailViewWireframe.h */,
+				03249C101FA5594400FCECCC /* PAVDetailViewWireframe.m */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		03249C111FA5594400FCECCC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				03249C121FA5594400FCECCC /* PAVDetailView.storyboard */,
+				03249C131FA5594400FCECCC /* PAVDetailViewViewController.m */,
+				03249C141FA5594400FCECCC /* PAVDetailViewViewInterface.h */,
+				03249C151FA5594400FCECCC /* PAVDetailViewViewController.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		03249C161FA5594400FCECCC /* Full Screen */ = {
+			isa = PBXGroup;
+			children = (
+				03249C171FA5594400FCECCC /* Module Interface */,
+				03249C191FA5594400FCECCC /* Application Logic */,
+				03249C1E1FA5594400FCECCC /* User Interface */,
+			);
+			path = "Full Screen";
+			sourceTree = "<group>";
+		};
+		03249C171FA5594400FCECCC /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				03249C181FA5594400FCECCC /* PAVFullScreenModuleInterface.h */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		03249C191FA5594400FCECCC /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				03249C1A1FA5594400FCECCC /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		03249C1A1FA5594400FCECCC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				03249C1B1FA5594400FCECCC /* PAVFullScreenInteractor.h */,
+				03249C1C1FA5594400FCECCC /* PAVFullScreenInteractorIO.h */,
+				03249C1D1FA5594400FCECCC /* PAVFullScreenInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		03249C1E1FA5594400FCECCC /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				03249C1F1FA5594400FCECCC /* Presenter */,
+				03249C221FA5594400FCECCC /* Wireframe */,
+				03249C251FA5594400FCECCC /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		03249C1F1FA5594400FCECCC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				03249C201FA5594400FCECCC /* PAVFullScreenPresenter.h */,
+				03249C211FA5594400FCECCC /* PAVFullScreenPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		03249C221FA5594400FCECCC /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				03249C231FA5594400FCECCC /* PAVFullScreenWireframe.h */,
+				03249C241FA5594400FCECCC /* PAVFullScreenWireframe.m */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		03249C251FA5594400FCECCC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				03249C261FA5594400FCECCC /* PAVFullScreenViewController.h */,
+				03249C271FA5594400FCECCC /* PAVFullScreenView.storyboard */,
+				03249C281FA5594400FCECCC /* PAVFullScreenViewInterface.h */,
+				03249C291FA5594400FCECCC /* PAVFullScreenViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		03249C341FA5597900FCECCC /* Photo Loading Session */ = {
+			isa = PBXGroup;
+			children = (
+				03249C351FA5597900FCECCC /* PAVPhotoLoadingSession.h */,
+				03249C361FA5597900FCECCC /* PAVLoadingSessionDelegate.h */,
+				03249C371FA5597900FCECCC /* PAVPhotoLoadingSession.m */,
+			);
+			path = "Photo Loading Session";
+			sourceTree = "<group>";
+		};
 		0C623B7B1DF87E2D002F923E = {
 			isa = PBXGroup;
 			children = (
@@ -106,7 +340,8 @@
 		0C623B861DF87E2D002F923E /* photoAppVorona */ = {
 			isa = PBXGroup;
 			children = (
-				0C623B9F1DF88014002F923E /* Resources */,
+				031174D81FA555E800D19AD0 /* Assets.xcassets */,
+				03249C391FA55A0C00FCECCC /* LaunchScreen.storyboard */,
 				0C623B9E1DF87FF4002F923E /* Classes */,
 				0C623B871DF87E2D002F923E /* Supporting Files */,
 			);
@@ -137,18 +372,11 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		0C623B9F1DF88014002F923E /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				0C623B951DF87E2D002F923E /* LaunchScreen.storyboard */,
-				0C623B931DF87E2D002F923E /* Assets.xcassets */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		0C623BA11DF8806B002F923E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				03249C021FA5594400FCECCC /* Detail View */,
+				03249C161FA5594400FCECCC /* Full Screen */,
 				0C623BC51DF89825002F923E /* Collection */,
 			);
 			path = Modules;
@@ -157,6 +385,7 @@
 		0C623BA21DF8807E002F923E /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				03249BF61FA5579E00FCECCC /* Model */,
 				0CE7EB551DF93D3C00879E95 /* Network */,
 				0CE7EB4E1DF9333E00879E95 /* Utilities */,
 				0C623BBC1DF89190002F923E /* View */,
@@ -167,6 +396,7 @@
 		0C623BAD1DF889D2002F923E /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				03249BF21FA556F600FCECCC /* NSJSONSerialization+Utils */,
 				0C623BB21DF88A02002F923E /* UIColor+MIAdditions */,
 				0C623BAE1DF889E1002F923E /* CALayer */,
 			);
@@ -194,6 +424,7 @@
 		0C623BBC1DF89190002F923E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				03249BFA1FA5584E00FCECCC /* Photo Display Item */,
 				0C623BBF1DF891FC002F923E /* Root Navigation Bar */,
 			);
 			path = View;
@@ -307,6 +538,7 @@
 		0CE7EB551DF93D3C00879E95 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				03249C341FA5597900FCECCC /* Photo Loading Session */,
 				0CE7EB561DF93E6700879E95 /* PAVNetworkManager.h */,
 				0CE7EB571DF93E6700879E95 /* PAVNetworkManager.m */,
 			);
@@ -409,10 +641,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C623B971DF87E2D002F923E /* LaunchScreen.storyboard in Resources */,
 				0C623BD91DF8B116002F923E /* PAVCollectionView.storyboard in Resources */,
+				03249C2D1FA5594400FCECCC /* PAVDetailView.storyboard in Resources */,
 				0CE7EB4C1DF92CFB00879E95 /* PAVPhotoCollectionViewCell.xib in Resources */,
-				0C623B941DF87E2D002F923E /* Assets.xcassets in Resources */,
+				03249C3B1FA55A0C00FCECCC /* LaunchScreen.storyboard in Resources */,
+				03249C321FA5594400FCECCC /* PAVFullScreenView.storyboard in Resources */,
 				0C623BC41DF89219002F923E /* PAVRootNavigationController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,13 +659,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-photoAppVorona-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		53C6CBD38CDAB600EC643BE2 /* [CP] Embed Pods Frameworks */ = {
@@ -474,17 +710,29 @@
 			files = (
 				0C623BC31DF89219002F923E /* PAVRootNavigationBarWireframe.m in Sources */,
 				0CE7EB581DF93E6700879E95 /* PAVNetworkManager.m in Sources */,
+				03249BFD1FA5589F00FCECCC /* PAVPhotoDisplayItem.m in Sources */,
 				0C623BB11DF889FE002F923E /* CALayer+XibConfiguration.m in Sources */,
 				0CE7EB5C1DF9500F00879E95 /* PAVDeviceDetector.m in Sources */,
+				03249C2F1FA5594400FCECCC /* PAVFullScreenInteractor.m in Sources */,
 				0C623BA51DF880E6002F923E /* AppDependencies.m in Sources */,
+				03249C2E1FA5594400FCECCC /* PAVDetailViewViewController.m in Sources */,
 				0C623B8C1DF87E2D002F923E /* AppDelegate.m in Sources */,
 				0CE7EB4B1DF92CFB00879E95 /* PAVPhotoCollectionViewCell.m in Sources */,
 				0CE7EB601DF9509200879E95 /* PAVPhotoListJSONParser.m in Sources */,
+				03249C301FA5594400FCECCC /* PAVFullScreenPresenter.m in Sources */,
+				03249C2B1FA5594400FCECCC /* PAVDetailViewPresenter.m in Sources */,
 				0C623BD51DF8A536002F923E /* PAVCollectionInteractor.m in Sources */,
+				03249BF91FA557B300FCECCC /* PAVPhotoItem.m in Sources */,
+				03249C311FA5594400FCECCC /* PAVFullScreenWireframe.m in Sources */,
 				0C623BB71DF88A29002F923E /* UIColor+MIAdditions.m in Sources */,
 				0C623BDC1DF8B137002F923E /* PAVCollectionViewController.m in Sources */,
+				03249C2C1FA5594400FCECCC /* PAVDetailViewWireframe.m in Sources */,
 				0C623BCC1DF89B64002F923E /* PAVCollectionWireframe.m in Sources */,
+				03249C381FA5597900FCECCC /* PAVPhotoLoadingSession.m in Sources */,
+				03249C331FA5594400FCECCC /* PAVFullScreenViewController.m in Sources */,
 				0C623BD01DF89C00002F923E /* PAVCollectionPresenter.m in Sources */,
+				03249BF51FA5572400FCECCC /* NSJSONSerialization+Utils.m in Sources */,
+				03249C2A1FA5594400FCECCC /* PAVDetailViewInteractor.m in Sources */,
 				0C623B891DF87E2D002F923E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,13 +740,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0C623B951DF87E2D002F923E /* LaunchScreen.storyboard */ = {
+		03249C391FA55A0C00FCECCC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0C623B961DF87E2D002F923E /* Base */,
+				03249C3A1FA55A0C00FCECCC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
